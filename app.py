@@ -6,10 +6,12 @@ from folium.plugins import MarkerCluster
 from folium import FeatureGroup
 
 # Load your data here
-counties_gvd_prob = pd.read_csv('/Users/a/Desktop/Final_project_github/armann_finalP/counties_gvd_prob.csv')
+counties_gvd_prob = pd.read_csv('counties_gvd_prob.csv')
+
 
 # Path to the GeoJSON file
-geojson_path = ('Data/georef-united-states-of-america-county.geojson')
+geojson_path = 'georef-united-states-of-america-county.geojson'
+
 
 # Create a Map instance
 m = folium.Map(location=[37.8, -96], zoom_start=4)
